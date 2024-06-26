@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  @apply min-h-full min-w-full overflow-x-auto bg-slate-950 text-white;
+}
+
+.header-link.active {
+  @apply text-blue-500;
+}
+
+.anticon.anticon-left,
+.anticon.anticon-right { /* Fixed a typo here */
+  @apply text-white;
+}
+
+li .ant-pagination-item:not(.ant-pagination-item-active) > a {
+  background-color: white !important;
+}
+
+span .ant-pagination-item-ellipsis {
+  background-color: white !important;
+}
